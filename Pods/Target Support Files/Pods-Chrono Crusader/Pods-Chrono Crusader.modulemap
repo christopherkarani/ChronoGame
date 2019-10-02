@@ -1,0 +1,6 @@
+framework module Pods_Chrono_Crusader {
+  umbrella header "Pods-Chrono Crusader-umbrella.h"
+
+  export *
+  module * { export * }
+}
