@@ -14,6 +14,8 @@ import RxCocoa
 class MainPlayer: SKSpriteNode {
     private let disposeBag = DisposeBag()
     
+    var currentAnimation: BehaviorRelay<SKAction> = .init(value: .init())
+    
     /// Keeps trackof player state
     var playerState: BehaviorRelay<PlayerState> = .init(value: .idle)
     
@@ -32,35 +34,42 @@ class MainPlayer: SKSpriteNode {
         name = "mainPlayer"
         
         //handle state changes
-        stateDidChange()
+        playerState
+            .asObservable()
+            .distinctUntilChanged()
+            .bind { (state) in
+                switch state {
+                case .idle:
+                    self.currentAnimation.accept(self.idleAnimation)
+                    print("idle state")
+                case .moving(let direction):
+                    switch direction {
+                    case .left:
+                        self.currentAnimation.accept(self.runAnimation)
+                        print("moving left")
+                    case .right:
+                        self.currentAnimation.accept(self.runAnimation)
+                        print("moving right")
+                    case .up:
+                        self.currentAnimation.accept(self.drawSwordAnimation)
+                    case .down:
+                        self.currentAnimation.accept(self.seathSwordAnimation)
+                    }
+                }
+            }
+            .disposed(by: disposeBag)
+        
+        //handle animation changes
+        currentAnimation
+            .asObservable()
+            .distinctUntilChanged()
+            .bind(onNext: { self.run($0) })
+            .disposed(by: disposeBag)
         
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func stateDidChange() {
-        playerState
-            .asObservable()
-            .bind { (state) in
-                switch state {
-                case .idle:
-                    print("idle state")
-                case .moving(let direction): break
-//                    switch direction {
-//                    case .left:
-//                        print("moving left")
-//                    case .right:
-//                        print("moving right")
-//                    }
-                }
-            }
-            .disposed(by: disposeBag)
-    }
-    
-    private func stateWillChange(to newState: PlayerState) {
-        
     }
 }
 
@@ -82,8 +91,9 @@ extension MainPlayer {
         // player idle animation
         let playerIdleImages = [idle1, idle2, idle3, idle4]
         let playerIdleTextures = playerIdleImages.map { SKTexture(image: $0) }
-        return SKAction.animate(with: playerIdleTextures,
-                                timePerFrame: AnimationTimeInterval.run)
+        let animation = SKAction.animate(with: playerIdleTextures,
+                                         timePerFrame: AnimationTimeInterval.run)
+        return SKAction.repeatForever(animation)
     }
     
     /// idle animation with sword unseathed
@@ -98,8 +108,10 @@ extension MainPlayer {
         // player idle animation
         let playerIdleImages = [idle1, idle2, idle3, idle4]
         let playerIdleTextures = playerIdleImages.map { SKTexture(image: $0) }
-        return SKAction.animate(with: playerIdleTextures,
-                                timePerFrame: AnimationTimeInterval.idle)
+        let animation = SKAction.animate(with: playerIdleTextures,
+                                         timePerFrame: AnimationTimeInterval.idle)
+        
+        return SKAction.repeatForever(animation)
     }
     
     /// running animation
@@ -115,8 +127,9 @@ extension MainPlayer {
         
         let imageCollection = [run, run1, run2, run3, run4, run5]
         let textureCollection = imageCollection.map { SKTexture(image: $0) }
-        return SKAction.animate(with: textureCollection,
-                                timePerFrame: AnimationTimeInterval.run)
+        let animation = SKAction.animate(with: textureCollection,
+                                         timePerFrame: AnimationTimeInterval.run)
+        return SKAction.repeatForever(animation)
     }
     
     /// running animation
@@ -175,15 +188,15 @@ extension MainPlayer {
 // MARK: Internal Types
 extension MainPlayer {
     /// Player Direction Enum
-    enum PlayerDirection {
+    enum PlayerDirection: Equatable {
         // removed for now since our feature set doesnt accomodate this yet
-//        case up
-//        case down
+        case up
+        case down
         case left
         case right
     }
     
-    enum PlayerState {
+    enum PlayerState: Equatable {
         case moving(PlayerDirection)
         case idle
         // future state
@@ -198,7 +211,7 @@ extension MainPlayer {
     }
     /* Player Animation timeintervals */
     enum AnimationTimeInterval {
-        static let run: TimeInterval = 0.3
+        static let run: TimeInterval = 0.2
         static let idle: TimeInterval = 0.3
         static let seathSword: TimeInterval = 0.3
         static let drawSword: TimeInterval = 0.3
