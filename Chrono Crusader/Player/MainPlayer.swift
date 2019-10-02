@@ -66,6 +66,9 @@ class MainPlayer: SKSpriteNode {
 
 // MARK: Animations
 extension MainPlayer {
+    
+    
+    
     /// Used at the start of the game
     private var idleAnimation: SKAction {
         // unwrap player idle images
@@ -79,7 +82,8 @@ extension MainPlayer {
         // player idle animation
         let playerIdleImages = [idle1, idle2, idle3, idle4]
         let playerIdleTextures = playerIdleImages.map { SKTexture(image: $0) }
-        return SKAction.animate(with: playerIdleTextures, timePerFrame: 0.3)
+        return SKAction.animate(with: playerIdleTextures,
+                                timePerFrame: AnimationTimeInterval.run)
     }
     
     /// idle animation with sword unseathed
@@ -94,7 +98,8 @@ extension MainPlayer {
         // player idle animation
         let playerIdleImages = [idle1, idle2, idle3, idle4]
         let playerIdleTextures = playerIdleImages.map { SKTexture(image: $0) }
-        return SKAction.animate(with: playerIdleTextures, timePerFrame: 0.3)
+        return SKAction.animate(with: playerIdleTextures,
+                                timePerFrame: AnimationTimeInterval.idle)
     }
     
     /// running animation
@@ -110,7 +115,60 @@ extension MainPlayer {
         
         let imageCollection = [run, run1, run2, run3, run4, run5]
         let textureCollection = imageCollection.map { SKTexture(image: $0) }
-        return SKAction.animate(with: textureCollection, timePerFrame: 0.3)
+        return SKAction.animate(with: textureCollection,
+                                timePerFrame: AnimationTimeInterval.run)
+    }
+    
+    /// running animation
+    private var runSwordAnimation: SKAction {
+        guard
+            let run = R.image.runSword0(),
+            let run1 = R.image.runSword1(),
+            let run2 = R.image.runSword2(),
+            let run3 = R.image.runSword3(),
+            let run4 = R.image.runSword4(),
+            let run5 = R.image.runSword5()
+            else {
+                fatalError("Unable to load running-sword animation images")
+        }
+        
+        let imageCollection = [run, run1, run2, run3, run4, run5]
+        let textureCollection = imageCollection.map { SKTexture(image: $0) }
+        return SKAction.animate(with: textureCollection,
+                                timePerFrame: AnimationTimeInterval.run)
+    }
+    
+    /// sword Seathing animation
+    private var seathSwordAnimation: SKAction {
+        guard
+            let seath = R.image.seathSword0(),
+            let seath1 = R.image.seathSword1(),
+            let seath2 = R.image.seathSword2(),
+            let seath3 = R.image.seathSword3()
+            else {
+                fatalError("Could not load seath animation images")
+        }
+        
+        let imageCollection = [seath, seath1, seath2, seath3]
+        let textureCollection = imageCollection.map { SKTexture(image: $0) }
+        return SKAction.animate(with: textureCollection,
+                                timePerFrame: AnimationTimeInterval.seathSword)
+    }
+    
+    private var drawSwordAnimation: SKAction {
+        guard
+            let drawSword = R.image.drawSword0(),
+            let drawSword1 = R.image.drawSword1(),
+            let drawSword2 = R.image.drawSword2(),
+            let drawSword3 = R.image.drawSword3()
+            else {
+                fatalError("Unable to load draw-sword image assets")
+        }
+        
+        let imageCollection = [drawSword, drawSword1, drawSword2, drawSword3]
+        let textureCollection = imageCollection.map { SKTexture(image: $0) }
+        return SKAction.animate(with: textureCollection,
+                                timePerFrame: AnimationTimeInterval.drawSword)
     }
 }
 
@@ -137,6 +195,13 @@ extension MainPlayer {
     /* Keeps track of constants */
     enum Constants {
         static let playerSize = CGSize(width: 80, height: 60)
+    }
+    /* Player Animation timeintervals */
+    enum AnimationTimeInterval {
+        static let run: TimeInterval = 0.3
+        static let idle: TimeInterval = 0.3
+        static let seathSword: TimeInterval = 0.3
+        static let drawSword: TimeInterval = 0.3
     }
 }
 
