@@ -26,6 +26,7 @@
 		3C692E4F2343D96D003301D0 /* adventurer-idle-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C692E472343D96D003301D0 /* adventurer-idle-01.png */; };
 		3C692E542343DBA4003301D0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C692E532343DBA4003301D0 /* R.generated.swift */; };
 		3CEBCAC72344266E007048D7 /* AnalogStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCAC62344266E007048D7 /* AnalogStick.swift */; };
+		3CEBCACA2344CB54007048D7 /* MainPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCAC92344CB54007048D7 /* MainPlayer.swift */; };
 		5B15C124EB2784E818B1B6ED /* Pods_Chrono_Crusader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065CD0C0E788AFAC1B451662 /* Pods_Chrono_Crusader.framework */; };
 		8165987A90FAD6475601915B /* Pods_Chrono_CrusaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27E8B0F6D2A142ED6283BD0 /* Pods_Chrono_CrusaderTests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		3C692E472343D96D003301D0 /* adventurer-idle-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adventurer-idle-01.png"; sourceTree = "<group>"; };
 		3C692E532343DBA4003301D0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		3CEBCAC62344266E007048D7 /* AnalogStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogStick.swift; sourceTree = "<group>"; };
+		3CEBCAC92344CB54007048D7 /* MainPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPlayer.swift; sourceTree = "<group>"; };
 		3D6CADC5323BC90D8DC2A62F /* Pods-Chrono Crusader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono Crusader.release.xcconfig"; path = "Target Support Files/Pods-Chrono Crusader/Pods-Chrono Crusader.release.xcconfig"; sourceTree = "<group>"; };
 		B496C523A25C7A4DFB041CCB /* Pods-Chrono Crusader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono Crusader.debug.xcconfig"; path = "Target Support Files/Pods-Chrono Crusader/Pods-Chrono Crusader.debug.xcconfig"; sourceTree = "<group>"; };
 		E27E8B0F6D2A142ED6283BD0 /* Pods_Chrono_CrusaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chrono_CrusaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 		3C692E172343D353003301D0 /* Chrono Crusader */ = {
 			isa = PBXGroup;
 			children = (
+				3CEBCAC82344CB43007048D7 /* Player */,
 				3C692E522343DB94003301D0 /* Supporting Files */,
 				3C692E3E2343D94D003301D0 /* Assets */,
 				3C692E182343D353003301D0 /* AppDelegate.swift */,
@@ -178,6 +181,14 @@
 				3CEBCAC62344266E007048D7 /* AnalogStick.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CEBCAC82344CB43007048D7 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				3CEBCAC92344CB54007048D7 /* MainPlayer.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		5EAAE73322C9377654EE9735 /* Pods */ = {
@@ -395,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C692E1F2343D353003301D0 /* GameScene.swift in Sources */,
+				3CEBCACA2344CB54007048D7 /* MainPlayer.swift in Sources */,
 				3CEBCAC72344266E007048D7 /* AnalogStick.swift in Sources */,
 				3C692E212343D353003301D0 /* GameViewController.swift in Sources */,
 				3C692E192343D353003301D0 /* AppDelegate.swift in Sources */,
