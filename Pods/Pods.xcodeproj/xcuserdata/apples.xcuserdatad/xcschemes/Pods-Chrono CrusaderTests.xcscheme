@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "47B41E3787BA4D898A5233A243A9E6F6"
+               BlueprintIdentifier = "679EF827847902EAB3307BCAD9DD88CD"
                BuildableName = "Pods_Chrono_CrusaderTests.framework"
                BlueprintName = "Pods-Chrono CrusaderTests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "47B41E3787BA4D898A5233A243A9E6F6"
+            BlueprintIdentifier = "679EF827847902EAB3307BCAD9DD88CD"
             BuildableName = "Pods_Chrono_CrusaderTests.framework"
             BlueprintName = "Pods-Chrono CrusaderTests"
             ReferencedContainer = "container:Pods.xcodeproj">

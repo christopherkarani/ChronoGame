@@ -15,7 +15,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     let joystick = TLAnalogJoystick(withDiameter: 100)
-    var player: MainPlayer!
+    var player = MainPlayer()
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
@@ -38,8 +38,20 @@ class GameScene: SKScene {
         
         // setup joystick listener actions for MOVING
         joystick.on(.move) { joystick in
-            
-            
+            print()
+            let value = joystick.angular
+            switch value {
+//            case -1 ... 1:
+//                self.player.playerState.accept(.moving(.up))
+            case -2 ... -1:
+                self.player.playerState.accept(.moving(.right))
+            case 1 ... 2.3:
+                self.player.playerState.accept(.moving(.left))
+//            case -3.2 ... 3 :
+//                self.player.playerState.accept(.moving(.down))
+            default:
+                self.player.playerState.accept(.idle)
+            }
         }
         // setup joystick listener actions for BEGINING
         joystick.on(.begin) { joystick in
@@ -47,7 +59,7 @@ class GameScene: SKScene {
         }
         // setup joystick listener actions for ENDING
         joystick.on(.end) { joystick in
-            
+            self.player.playerState.accept(.idle)
         }
         
         

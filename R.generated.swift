@@ -16,7 +16,7 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.file` struct is generated, and contains static references to 10 files.
+  /// This `R.file` struct is generated, and contains static references to 30 files.
   struct file {
     /// Resource file `Actions.sks`.
     static let actionsSks = Rswift.FileResource(bundle: R.hostingBundle, name: "Actions", pathExtension: "sks")
@@ -38,6 +38,46 @@ struct R: Rswift.Validatable {
     static let adventurerIdleAttack02Png = Rswift.FileResource(bundle: R.hostingBundle, name: "adventurer-idle-attack-02", pathExtension: "png")
     /// Resource file `adventurer-idle-attack-03.png`.
     static let adventurerIdleAttack03Png = Rswift.FileResource(bundle: R.hostingBundle, name: "adventurer-idle-attack-03", pathExtension: "png")
+    /// Resource file `drawSword0.png`.
+    static let drawSword0Png = Rswift.FileResource(bundle: R.hostingBundle, name: "drawSword0", pathExtension: "png")
+    /// Resource file `drawSword1.png`.
+    static let drawSword1Png = Rswift.FileResource(bundle: R.hostingBundle, name: "drawSword1", pathExtension: "png")
+    /// Resource file `drawSword2.png`.
+    static let drawSword2Png = Rswift.FileResource(bundle: R.hostingBundle, name: "drawSword2", pathExtension: "png")
+    /// Resource file `drawSword3.png`.
+    static let drawSword3Png = Rswift.FileResource(bundle: R.hostingBundle, name: "drawSword3", pathExtension: "png")
+    /// Resource file `run0.png`.
+    static let run0Png = Rswift.FileResource(bundle: R.hostingBundle, name: "run0", pathExtension: "png")
+    /// Resource file `run1.png`.
+    static let run1Png = Rswift.FileResource(bundle: R.hostingBundle, name: "run1", pathExtension: "png")
+    /// Resource file `run2.png`.
+    static let run2Png = Rswift.FileResource(bundle: R.hostingBundle, name: "run2", pathExtension: "png")
+    /// Resource file `run3.png`.
+    static let run3Png = Rswift.FileResource(bundle: R.hostingBundle, name: "run3", pathExtension: "png")
+    /// Resource file `run4.png`.
+    static let run4Png = Rswift.FileResource(bundle: R.hostingBundle, name: "run4", pathExtension: "png")
+    /// Resource file `run5.png`.
+    static let run5Png = Rswift.FileResource(bundle: R.hostingBundle, name: "run5", pathExtension: "png")
+    /// Resource file `runSword0.png`.
+    static let runSword0Png = Rswift.FileResource(bundle: R.hostingBundle, name: "runSword0", pathExtension: "png")
+    /// Resource file `runSword1.png`.
+    static let runSword1Png = Rswift.FileResource(bundle: R.hostingBundle, name: "runSword1", pathExtension: "png")
+    /// Resource file `runSword2.png`.
+    static let runSword2Png = Rswift.FileResource(bundle: R.hostingBundle, name: "runSword2", pathExtension: "png")
+    /// Resource file `runSword3.png`.
+    static let runSword3Png = Rswift.FileResource(bundle: R.hostingBundle, name: "runSword3", pathExtension: "png")
+    /// Resource file `runSword4.png`.
+    static let runSword4Png = Rswift.FileResource(bundle: R.hostingBundle, name: "runSword4", pathExtension: "png")
+    /// Resource file `runSword5.png`.
+    static let runSword5Png = Rswift.FileResource(bundle: R.hostingBundle, name: "runSword5", pathExtension: "png")
+    /// Resource file `seathSword0.png`.
+    static let seathSword0Png = Rswift.FileResource(bundle: R.hostingBundle, name: "seathSword0", pathExtension: "png")
+    /// Resource file `seathSword1.png`.
+    static let seathSword1Png = Rswift.FileResource(bundle: R.hostingBundle, name: "seathSword1", pathExtension: "png")
+    /// Resource file `seathSword2.png`.
+    static let seathSword2Png = Rswift.FileResource(bundle: R.hostingBundle, name: "seathSword2", pathExtension: "png")
+    /// Resource file `seathSword3.png`.
+    static let seathSword3Png = Rswift.FileResource(bundle: R.hostingBundle, name: "seathSword3", pathExtension: "png")
     
     /// `bundle.url(forResource: "Actions", withExtension: "sks")`
     static func actionsSks(_: Void = ()) -> Foundation.URL? {
@@ -99,10 +139,130 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
+    /// `bundle.url(forResource: "drawSword0", withExtension: "png")`
+    static func drawSword0Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.drawSword0Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "drawSword1", withExtension: "png")`
+    static func drawSword1Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.drawSword1Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "drawSword2", withExtension: "png")`
+    static func drawSword2Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.drawSword2Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "drawSword3", withExtension: "png")`
+    static func drawSword3Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.drawSword3Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "run0", withExtension: "png")`
+    static func run0Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.run0Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "run1", withExtension: "png")`
+    static func run1Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.run1Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "run2", withExtension: "png")`
+    static func run2Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.run2Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "run3", withExtension: "png")`
+    static func run3Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.run3Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "run4", withExtension: "png")`
+    static func run4Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.run4Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "run5", withExtension: "png")`
+    static func run5Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.run5Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "runSword0", withExtension: "png")`
+    static func runSword0Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.runSword0Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "runSword1", withExtension: "png")`
+    static func runSword1Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.runSword1Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "runSword2", withExtension: "png")`
+    static func runSword2Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.runSword2Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "runSword3", withExtension: "png")`
+    static func runSword3Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.runSword3Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "runSword4", withExtension: "png")`
+    static func runSword4Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.runSword4Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "runSword5", withExtension: "png")`
+    static func runSword5Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.runSword5Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "seathSword0", withExtension: "png")`
+    static func seathSword0Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.seathSword0Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "seathSword1", withExtension: "png")`
+    static func seathSword1Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.seathSword1Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "seathSword2", withExtension: "png")`
+    static func seathSword2Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.seathSword2Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "seathSword3", withExtension: "png")`
+    static func seathSword3Png(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.seathSword3Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 8 images.
+  /// This `R.image` struct is generated, and contains static references to 28 images.
   struct image {
     /// Image `adventurer-idle-00`.
     static let adventurerIdle00 = Rswift.ImageResource(bundle: R.hostingBundle, name: "adventurer-idle-00")
@@ -120,6 +280,46 @@ struct R: Rswift.Validatable {
     static let adventurerIdleAttack02 = Rswift.ImageResource(bundle: R.hostingBundle, name: "adventurer-idle-attack-02")
     /// Image `adventurer-idle-attack-03`.
     static let adventurerIdleAttack03 = Rswift.ImageResource(bundle: R.hostingBundle, name: "adventurer-idle-attack-03")
+    /// Image `drawSword0`.
+    static let drawSword0 = Rswift.ImageResource(bundle: R.hostingBundle, name: "drawSword0")
+    /// Image `drawSword1`.
+    static let drawSword1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "drawSword1")
+    /// Image `drawSword2`.
+    static let drawSword2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "drawSword2")
+    /// Image `drawSword3`.
+    static let drawSword3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "drawSword3")
+    /// Image `run0`.
+    static let run0 = Rswift.ImageResource(bundle: R.hostingBundle, name: "run0")
+    /// Image `run1`.
+    static let run1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "run1")
+    /// Image `run2`.
+    static let run2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "run2")
+    /// Image `run3`.
+    static let run3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "run3")
+    /// Image `run4`.
+    static let run4 = Rswift.ImageResource(bundle: R.hostingBundle, name: "run4")
+    /// Image `run5`.
+    static let run5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "run5")
+    /// Image `runSword0`.
+    static let runSword0 = Rswift.ImageResource(bundle: R.hostingBundle, name: "runSword0")
+    /// Image `runSword1`.
+    static let runSword1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "runSword1")
+    /// Image `runSword2`.
+    static let runSword2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "runSword2")
+    /// Image `runSword3`.
+    static let runSword3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "runSword3")
+    /// Image `runSword4`.
+    static let runSword4 = Rswift.ImageResource(bundle: R.hostingBundle, name: "runSword4")
+    /// Image `runSword5`.
+    static let runSword5 = Rswift.ImageResource(bundle: R.hostingBundle, name: "runSword5")
+    /// Image `seathSword0`.
+    static let seathSword0 = Rswift.ImageResource(bundle: R.hostingBundle, name: "seathSword0")
+    /// Image `seathSword1`.
+    static let seathSword1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "seathSword1")
+    /// Image `seathSword2`.
+    static let seathSword2 = Rswift.ImageResource(bundle: R.hostingBundle, name: "seathSword2")
+    /// Image `seathSword3`.
+    static let seathSword3 = Rswift.ImageResource(bundle: R.hostingBundle, name: "seathSword3")
     
     /// `UIImage(named: "adventurer-idle-00", bundle: ..., traitCollection: ...)`
     static func adventurerIdle00(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -159,6 +359,106 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "adventurer-idle-attack-03", bundle: ..., traitCollection: ...)`
     static func adventurerIdleAttack03(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.adventurerIdleAttack03, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "drawSword0", bundle: ..., traitCollection: ...)`
+    static func drawSword0(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.drawSword0, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "drawSword1", bundle: ..., traitCollection: ...)`
+    static func drawSword1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.drawSword1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "drawSword2", bundle: ..., traitCollection: ...)`
+    static func drawSword2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.drawSword2, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "drawSword3", bundle: ..., traitCollection: ...)`
+    static func drawSword3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.drawSword3, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "run0", bundle: ..., traitCollection: ...)`
+    static func run0(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.run0, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "run1", bundle: ..., traitCollection: ...)`
+    static func run1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.run1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "run2", bundle: ..., traitCollection: ...)`
+    static func run2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.run2, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "run3", bundle: ..., traitCollection: ...)`
+    static func run3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.run3, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "run4", bundle: ..., traitCollection: ...)`
+    static func run4(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.run4, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "run5", bundle: ..., traitCollection: ...)`
+    static func run5(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.run5, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "runSword0", bundle: ..., traitCollection: ...)`
+    static func runSword0(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.runSword0, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "runSword1", bundle: ..., traitCollection: ...)`
+    static func runSword1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.runSword1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "runSword2", bundle: ..., traitCollection: ...)`
+    static func runSword2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.runSword2, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "runSword3", bundle: ..., traitCollection: ...)`
+    static func runSword3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.runSword3, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "runSword4", bundle: ..., traitCollection: ...)`
+    static func runSword4(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.runSword4, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "runSword5", bundle: ..., traitCollection: ...)`
+    static func runSword5(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.runSword5, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "seathSword0", bundle: ..., traitCollection: ...)`
+    static func seathSword0(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.seathSword0, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "seathSword1", bundle: ..., traitCollection: ...)`
+    static func seathSword1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.seathSword1, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "seathSword2", bundle: ..., traitCollection: ...)`
+    static func seathSword2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.seathSword2, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "seathSword3", bundle: ..., traitCollection: ...)`
+    static func seathSword3(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.seathSword3, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}

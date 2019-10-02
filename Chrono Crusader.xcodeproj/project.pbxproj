@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,7 +24,27 @@
 		3C692E4D2343D96D003301D0 /* adventurer-idle-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C692E452343D96D003301D0 /* adventurer-idle-03.png */; };
 		3C692E4E2343D96D003301D0 /* adventurer-idle-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C692E462343D96D003301D0 /* adventurer-idle-02.png */; };
 		3C692E4F2343D96D003301D0 /* adventurer-idle-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C692E472343D96D003301D0 /* adventurer-idle-01.png */; };
-		3C692E542343DBA4003301D0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C692E532343DBA4003301D0 /* R.generated.swift */; };
+		3CC6EA002344FFAA00F46039 /* drawSword3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6E9FC2344FFA900F46039 /* drawSword3.png */; };
+		3CC6EA012344FFAA00F46039 /* drawSword1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6E9FD2344FFA900F46039 /* drawSword1.png */; };
+		3CC6EA022344FFAA00F46039 /* drawSword0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6E9FE2344FFA900F46039 /* drawSword0.png */; };
+		3CC6EA032344FFAA00F46039 /* drawSword2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6E9FF2344FFAA00F46039 /* drawSword2.png */; };
+		3CC6EA092344FFCF00F46039 /* seathSword0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA052344FFCF00F46039 /* seathSword0.png */; };
+		3CC6EA0A2344FFCF00F46039 /* seathSword1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA062344FFCF00F46039 /* seathSword1.png */; };
+		3CC6EA0B2344FFCF00F46039 /* seathSword2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA072344FFCF00F46039 /* seathSword2.png */; };
+		3CC6EA0C2344FFCF00F46039 /* seathSword3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA082344FFCF00F46039 /* seathSword3.png */; };
+		3CC6EA142345007300F46039 /* runSword3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA0E2345006F00F46039 /* runSword3.png */; };
+		3CC6EA152345007300F46039 /* runSword1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA0F2345006F00F46039 /* runSword1.png */; };
+		3CC6EA162345007300F46039 /* runSword5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA102345007000F46039 /* runSword5.png */; };
+		3CC6EA172345007300F46039 /* runSword4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA112345007100F46039 /* runSword4.png */; };
+		3CC6EA182345007300F46039 /* runSword0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA122345007200F46039 /* runSword0.png */; };
+		3CC6EA192345007300F46039 /* runSword2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA132345007300F46039 /* runSword2.png */; };
+		3CC6EA1B2345015700F46039 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC6EA1A2345015700F46039 /* R.generated.swift */; };
+		3CC6EA23234502D300F46039 /* run5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA1D234502D200F46039 /* run5.png */; };
+		3CC6EA24234502D300F46039 /* run0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA1E234502D200F46039 /* run0.png */; };
+		3CC6EA25234502D300F46039 /* run2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA1F234502D300F46039 /* run2.png */; };
+		3CC6EA26234502D300F46039 /* run1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA20234502D300F46039 /* run1.png */; };
+		3CC6EA27234502D300F46039 /* run4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA21234502D300F46039 /* run4.png */; };
+		3CC6EA28234502D300F46039 /* run3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CC6EA22234502D300F46039 /* run3.png */; };
 		3CEBCAC72344266E007048D7 /* AnalogStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCAC62344266E007048D7 /* AnalogStick.swift */; };
 		3CEBCACA2344CB54007048D7 /* MainPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBCAC92344CB54007048D7 /* MainPlayer.swift */; };
 		5B15C124EB2784E818B1B6ED /* Pods_Chrono_Crusader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065CD0C0E788AFAC1B451662 /* Pods_Chrono_Crusader.framework */; };
@@ -66,7 +86,27 @@
 		3C692E452343D96D003301D0 /* adventurer-idle-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adventurer-idle-03.png"; sourceTree = "<group>"; };
 		3C692E462343D96D003301D0 /* adventurer-idle-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adventurer-idle-02.png"; sourceTree = "<group>"; };
 		3C692E472343D96D003301D0 /* adventurer-idle-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "adventurer-idle-01.png"; sourceTree = "<group>"; };
-		3C692E532343DBA4003301D0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		3CC6E9FC2344FFA900F46039 /* drawSword3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drawSword3.png; sourceTree = "<group>"; };
+		3CC6E9FD2344FFA900F46039 /* drawSword1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drawSword1.png; sourceTree = "<group>"; };
+		3CC6E9FE2344FFA900F46039 /* drawSword0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drawSword0.png; sourceTree = "<group>"; };
+		3CC6E9FF2344FFAA00F46039 /* drawSword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drawSword2.png; sourceTree = "<group>"; };
+		3CC6EA052344FFCF00F46039 /* seathSword0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seathSword0.png; sourceTree = "<group>"; };
+		3CC6EA062344FFCF00F46039 /* seathSword1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seathSword1.png; sourceTree = "<group>"; };
+		3CC6EA072344FFCF00F46039 /* seathSword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seathSword2.png; sourceTree = "<group>"; };
+		3CC6EA082344FFCF00F46039 /* seathSword3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seathSword3.png; sourceTree = "<group>"; };
+		3CC6EA0E2345006F00F46039 /* runSword3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runSword3.png; sourceTree = "<group>"; };
+		3CC6EA0F2345006F00F46039 /* runSword1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runSword1.png; sourceTree = "<group>"; };
+		3CC6EA102345007000F46039 /* runSword5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runSword5.png; sourceTree = "<group>"; };
+		3CC6EA112345007100F46039 /* runSword4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runSword4.png; sourceTree = "<group>"; };
+		3CC6EA122345007200F46039 /* runSword0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runSword0.png; sourceTree = "<group>"; };
+		3CC6EA132345007300F46039 /* runSword2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runSword2.png; sourceTree = "<group>"; };
+		3CC6EA1A2345015700F46039 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		3CC6EA1D234502D200F46039 /* run5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run5.png; sourceTree = "<group>"; };
+		3CC6EA1E234502D200F46039 /* run0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run0.png; sourceTree = "<group>"; };
+		3CC6EA1F234502D300F46039 /* run2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run2.png; sourceTree = "<group>"; };
+		3CC6EA20234502D300F46039 /* run1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run1.png; sourceTree = "<group>"; };
+		3CC6EA21234502D300F46039 /* run4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run4.png; sourceTree = "<group>"; };
+		3CC6EA22234502D300F46039 /* run3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run3.png; sourceTree = "<group>"; };
 		3CEBCAC62344266E007048D7 /* AnalogStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogStick.swift; sourceTree = "<group>"; };
 		3CEBCAC92344CB54007048D7 /* MainPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPlayer.swift; sourceTree = "<group>"; };
 		3D6CADC5323BC90D8DC2A62F /* Pods-Chrono Crusader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chrono Crusader.release.xcconfig"; path = "Target Support Files/Pods-Chrono Crusader/Pods-Chrono Crusader.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +194,7 @@
 		3C692E3E2343D94D003301D0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3CC6E9FA2344F46600F46039 /* HeroActions */,
 				3C692E3F2343D956003301D0 /* Adventurer-Idle */,
 			);
 			path = Assets;
@@ -177,10 +218,69 @@
 		3C692E522343DB94003301D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C692E532343DBA4003301D0 /* R.generated.swift */,
+				3CC6EA1A2345015700F46039 /* R.generated.swift */,
 				3CEBCAC62344266E007048D7 /* AnalogStick.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CC6E9FA2344F46600F46039 /* HeroActions */ = {
+			isa = PBXGroup;
+			children = (
+				3CC6EA1C234502C200F46039 /* Run */,
+				3CC6EA0D2345006200F46039 /* RunSword */,
+				3CC6EA042344FFBB00F46039 /* SeathSword */,
+				3CC6E9FB2344F46F00F46039 /* DrawSword */,
+			);
+			path = HeroActions;
+			sourceTree = "<group>";
+		};
+		3CC6E9FB2344F46F00F46039 /* DrawSword */ = {
+			isa = PBXGroup;
+			children = (
+				3CC6E9FE2344FFA900F46039 /* drawSword0.png */,
+				3CC6E9FD2344FFA900F46039 /* drawSword1.png */,
+				3CC6E9FF2344FFAA00F46039 /* drawSword2.png */,
+				3CC6E9FC2344FFA900F46039 /* drawSword3.png */,
+			);
+			path = DrawSword;
+			sourceTree = "<group>";
+		};
+		3CC6EA042344FFBB00F46039 /* SeathSword */ = {
+			isa = PBXGroup;
+			children = (
+				3CC6EA052344FFCF00F46039 /* seathSword0.png */,
+				3CC6EA062344FFCF00F46039 /* seathSword1.png */,
+				3CC6EA072344FFCF00F46039 /* seathSword2.png */,
+				3CC6EA082344FFCF00F46039 /* seathSword3.png */,
+			);
+			path = SeathSword;
+			sourceTree = "<group>";
+		};
+		3CC6EA0D2345006200F46039 /* RunSword */ = {
+			isa = PBXGroup;
+			children = (
+				3CC6EA122345007200F46039 /* runSword0.png */,
+				3CC6EA0F2345006F00F46039 /* runSword1.png */,
+				3CC6EA132345007300F46039 /* runSword2.png */,
+				3CC6EA0E2345006F00F46039 /* runSword3.png */,
+				3CC6EA112345007100F46039 /* runSword4.png */,
+				3CC6EA102345007000F46039 /* runSword5.png */,
+			);
+			path = RunSword;
+			sourceTree = "<group>";
+		};
+		3CC6EA1C234502C200F46039 /* Run */ = {
+			isa = PBXGroup;
+			children = (
+				3CC6EA1E234502D200F46039 /* run0.png */,
+				3CC6EA20234502D300F46039 /* run1.png */,
+				3CC6EA1F234502D300F46039 /* run2.png */,
+				3CC6EA22234502D300F46039 /* run3.png */,
+				3CC6EA21234502D300F46039 /* run4.png */,
+				3CC6EA1D234502D200F46039 /* run5.png */,
+			);
+			path = Run;
 			sourceTree = "<group>";
 		};
 		3CEBCAC82344CB43007048D7 /* Player */ = {
@@ -288,18 +388,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C692E242343D353003301D0 /* Main.storyboard in Resources */,
+				3CC6EA152345007300F46039 /* runSword1.png in Resources */,
+				3CC6EA092344FFCF00F46039 /* seathSword0.png in Resources */,
+				3CC6EA022344FFAA00F46039 /* drawSword0.png in Resources */,
 				3C692E4B2343D96D003301D0 /* adventurer-idle-00.png in Resources */,
+				3CC6EA002344FFAA00F46039 /* drawSword3.png in Resources */,
 				3C692E492343D96D003301D0 /* adventurer-idle-attack-01.png in Resources */,
 				3C692E1B2343D353003301D0 /* GameScene.sks in Resources */,
+				3CC6EA162345007300F46039 /* runSword5.png in Resources */,
 				3C692E262343D354003301D0 /* Assets.xcassets in Resources */,
+				3CC6EA172345007300F46039 /* runSword4.png in Resources */,
 				3C692E4D2343D96D003301D0 /* adventurer-idle-03.png in Resources */,
+				3CC6EA23234502D300F46039 /* run5.png in Resources */,
 				3C692E4C2343D96D003301D0 /* adventurer-idle-attack-03.png in Resources */,
+				3CC6EA0C2344FFCF00F46039 /* seathSword3.png in Resources */,
+				3CC6EA012344FFAA00F46039 /* drawSword1.png in Resources */,
+				3CC6EA032344FFAA00F46039 /* drawSword2.png in Resources */,
 				3C692E4A2343D96D003301D0 /* adventurer-idle-attack-02.png in Resources */,
+				3CC6EA182345007300F46039 /* runSword0.png in Resources */,
 				3C692E292343D354003301D0 /* LaunchScreen.storyboard in Resources */,
+				3CC6EA28234502D300F46039 /* run3.png in Resources */,
 				3C692E482343D96D003301D0 /* adventurer-idle-attack-00.png in Resources */,
+				3CC6EA0B2344FFCF00F46039 /* seathSword2.png in Resources */,
 				3C692E1D2343D353003301D0 /* Actions.sks in Resources */,
 				3C692E4E2343D96D003301D0 /* adventurer-idle-02.png in Resources */,
+				3CC6EA26234502D300F46039 /* run1.png in Resources */,
+				3CC6EA24234502D300F46039 /* run0.png in Resources */,
+				3CC6EA192345007300F46039 /* runSword2.png in Resources */,
+				3CC6EA27234502D300F46039 /* run4.png in Resources */,
 				3C692E4F2343D96D003301D0 /* adventurer-idle-01.png in Resources */,
+				3CC6EA142345007300F46039 /* runSword3.png in Resources */,
+				3CC6EA0A2344FFCF00F46039 /* seathSword1.png in Resources */,
+				3CC6EA25234502D300F46039 /* run2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,16 +502,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Chrono Crusader/Pods-Chrono Crusader-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Chrono Crusader/Pods-Chrono Crusader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Chrono Crusader/Pods-Chrono Crusader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -410,7 +525,7 @@
 				3CEBCAC72344266E007048D7 /* AnalogStick.swift in Sources */,
 				3C692E212343D353003301D0 /* GameViewController.swift in Sources */,
 				3C692E192343D353003301D0 /* AppDelegate.swift in Sources */,
-				3C692E542343DBA4003301D0 /* R.generated.swift in Sources */,
+				3CC6EA1B2345015700F46039 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
